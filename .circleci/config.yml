@@ -567,10 +567,6 @@ workflows:
     jobs:
       - bootstrap-with-experimental-react:
           version: "next"
-      - e2e_tests_gatsby-image_with_next_react:
-          nightly: true
-          requires:
-            - bootstrap-with-experimental-react
       - e2e_tests_development_runtime_with_next_react:
           nightly: true
           requires:
@@ -590,10 +586,6 @@ workflows:
     jobs:
       - bootstrap-with-experimental-react:
           version: "experimental"
-      - e2e_tests_gatsby-image_with_experimental_react:
-          nightly: true
-          requires:
-            - bootstrap-with-experimental-react
       - e2e_tests_development_runtime_with_experimental_react:
           nightly: true
           requires:
@@ -660,8 +652,6 @@ workflows:
       - e2e_tests_pnp:
           <<: *e2e-test-workflow
       - e2e_tests_path-prefix:
-          <<: *e2e-test-workflow
-      - e2e_tests_gatsby-image:
           <<: *e2e-test-workflow
       - e2e_tests_gatsby-static-image:
           <<: *e2e-test-workflow
