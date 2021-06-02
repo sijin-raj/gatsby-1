@@ -340,26 +340,6 @@
       excludePackageNames: ["cross-env"],
     },
     {
-      groupName: "minor and patch for gatsby-image",
-      paths: ["packages/gatsby-image/"],
-      groupSlug: "gatsby-image",
-      updateTypes: ["minor", "patch"],
-      // force pr title to be the plugin name
-      commitMessageTopic: "minor and patch for gatsby-image",
-      commitMessageExtra: "",
-      excludePackageNames: ["cross-env", "lodash", "lodash-es", "typescript"],
-      excludePackagePatterns: ["^lodash/", "^@babel/"],
-    },
-    {
-      groupName: "major for gatsby-image",
-      paths: ["packages/gatsby-image/"],
-      groupSlug: "gatsby-image-major",
-      updateTypes: ["major"],
-      // force pr title to be the plugin name
-      commitMessageSuffix: "for gatsby-image",
-      excludePackageNames: ["cross-env"],
-    },
-    {
       groupName: "minor and patch for gatsby-link",
       paths: ["packages/gatsby-link/"],
       groupSlug: "gatsby-link",
